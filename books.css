@@ -7,19 +7,16 @@
   width: 200px;
   border: solid 1px black;
   word-break: break-all;
+  color: green;
 }
 .book-title {
   font-size: x-large;
   margin-bottom: 5px;
   max-width: 20;
+  color: red;
 }
 
 .book-author {
   font-size: medium;
   margin-bottom: 20px;
 }
-
-#bookInfo {
-  border: 2px dashed green;
-}
-

@@ -4,7 +4,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
   <script src="books.js"></script>
   <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
-  <link href="books.css" type="text/css" />
+  <link href="books.css" rel="stylesheet" type="text/css" />
   <meta charset="utf-8">
   <title>Blair's Angular Bookshelf</title>
 </head>
@@ -17,13 +17,15 @@
       <textarea ng-model="newBook.description" placeholder="Description"></textarea><br>
       <button>Add Book</button>
     </form>
-    <div ng-repeat="book in books", ng-class="book">
-      <h4>
-        {{book.title}}<br>
-        {{book.author}}<br>
-        {{book.isbn}}<br>
-        {{book.description}}
-      </h4>
+    <div ng-repeat="book in books">
+      <div class="book">
+        <h4>
+          <div class="book-title">{{book.title}}</div><br>
+          <div class="book-author ">{{book.author}}</div><br>
+          {{book.isbn}}<br>
+          {{book.description}}
+        </h4>
+      </div>
       <form ng-click="deleteBook(item)">
         <button>Delete Book</button>
       </form>
