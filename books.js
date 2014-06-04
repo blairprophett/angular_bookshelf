@@ -5,4 +5,9 @@ var BooksCtrl = function($scope) {
     $scope.books.push($scope.newBook);
     $scope.newBook = {};
   };
+
+  $scope.deleteBook = function(newBook) {
+    var index = $scope.books.indexOf(newBook)
+    $scope.books.splice(index, 1);
+  };
 };

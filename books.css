@@ -19,7 +19,7 @@
   margin-bottom: 20px;
 }
 
-.body {
-  color: red;
+#bookInfo {
+  border: 2px dashed green;
 }
 
